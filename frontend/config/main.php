@@ -8,7 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-frontend',
-    'name'=>'KOPKARS PNJ',
+    'name'=>'KOPKARS',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
@@ -41,13 +41,11 @@ return [
             ],
         ],
         'request' => [
-            'class' => 'common\components\Request',
             'csrfParam' => '_csrf-frontend',
-            'web'=> '/frontend/web',
         ],
         'session' => [
             // this is the name of the session cookie used for login on the frontend
-            'name' => 'advanced-frontend',
+            'name' => 'kopkars-frontend',
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,

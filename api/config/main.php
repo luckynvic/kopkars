@@ -8,7 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-api',
-    'name'=>'API KOPKARS PNJ',
+    'name'=>'API KOPKARS',
     'basePath' => dirname(__DIR__),
     //'bootstrap' => ['log'],
     'controllerNamespace' => 'api\controllers',

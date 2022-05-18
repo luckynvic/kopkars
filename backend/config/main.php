@@ -43,14 +43,10 @@ return [
         ],
         'request' => [
             'csrfParam' => '_csrf-backend',
-            //setting jika menggunakan Cloud Server
-            'class' => 'common\components\Request',
-            'web'=> '/backend/web',
-            'adminUrl' => '/backend'
         ],
         'session' => [
             // this is the name of the session cookie used for login on the backend
-            'name' => 'advanced-backend',
+            'name' => 'kopkar-backend',
         ],
         'urlManager' => [
             'enablePrettyUrl' => true,

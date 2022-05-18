@@ -77,7 +77,7 @@ AppAsset::register($this);
 <div class="container-fluid">
         <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
 
-        <p class="pull-right">Powered by <?=Html::a('PNJ','https://pnj.ac.id/')?> and <?=Html::a('JaringanKantor','https://www.jaringankantor.com/')?></p>
+        <p class="pull-right">Powered by <?=Html::a('Kopkar','https://kopkar.setneg-ppkk.co.id/')?> and <?=Html::a('JaringanKantor','https://www.setneg-ppkk.co.id/')?></p>
     </div>
 </footer>
 

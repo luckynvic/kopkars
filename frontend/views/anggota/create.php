@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Anggota */
 
-$this->title = 'Formulir Pendaftaran KOPKARS PNJ';
+$this->title = 'Formulir Pendaftaran KOPKARS';
 //$this->params['breadcrumbs'][] = ['label' => 'Anggotas', 'url' => ['index']];
 //$this->params['breadcrumbs'][] = $this->title;
 ?>

@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Beranda KOPKARS PNJ';
+$this->title = 'Beranda KOPKARS';
 
 ?>
 <div class="site-index">
@@ -10,7 +10,7 @@ $this->title = 'Beranda KOPKARS PNJ';
     <div class="jumbotron">
         <h1>Selamat Datang!</h1>
 
-        <p class="lead">Jika anda tertarik bergabung ke koperasi KOPKARS PNJ klik tombol dibawah ini.</p>
+        <p class="lead">Jika anda tertarik bergabung ke koperasi KOPKARS klik tombol dibawah ini.</p>
 
         <p><a class="btn btn-lg btn-success" href="<?php echo yii\helpers\Url::toRoute('site/registrasi')?>">Mendaftar menjadi anggota</a></p>
     </div>

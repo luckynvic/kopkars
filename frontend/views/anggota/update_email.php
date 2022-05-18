@@ -24,7 +24,7 @@ $this->title = 'Update Data Email';
     'options' => ['enctype' => 'multipart/form-data']
     ]); ?>
 
-    <?= $form->field($model, 'email',['addon' => ['prepend' => ['content'=>'@']]])->textInput(['maxlength' => true])->textInput(['maxlength' => true,'placeholder' => 'Email pribadi aktif (diutamakan email PNJ)','disabled'=>($model->scenario == 'update')? TRUE : FALSE]) ?>
+    <?= $form->field($model, 'email',['addon' => ['prepend' => ['content'=>'@']]])->textInput(['maxlength' => true])->textInput(['maxlength' => true,'placeholder' => 'Email pribadi aktif (diutamakan email PPK Kemayoran)','disabled'=>($model->scenario == 'update')? TRUE : FALSE]) ?>
 
     <?= $form->field($model, 'captcha')->widget(\yii\captcha\Captcha::classname(), ['options' => ['class' => 'form-control']])->hint('Klik pada gambar captcha jika tidak terbaca') ?>
 
