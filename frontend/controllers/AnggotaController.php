@@ -32,12 +32,12 @@ class AnggotaController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'actions' => ['verify-email','resend-verification-email','select-karyawan-pnj'],
+                        'actions' => ['verify-email','resend-verification-email','select-karyawan'],
                         'roles' => ['?'],
                     ],
                     [
                         'allow' => true,
-                        'actions' => ['biodata','update','update-email','update-foto','update-foto-ktp','update-hp','select-karyawan-pnj'],
+                        'actions' => ['biodata','update','update-email','update-foto','update-foto-ktp','update-hp','select-karyawan'],
                         'roles' => ['@'],
                     ],
                 ],
@@ -58,7 +58,7 @@ class AnggotaController extends Controller
         ]);
     }
 
-    public function actionSelectKaryawanPnj($q = null, $nomor_pegawai = null) {
+    public function actionSelectKaryawan($q = null, $nomor_pegawai = null) {
         \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
         $out = ['results' => ['id' => '', 'text' => '']];
         if (!is_null($q)) {

@@ -29,7 +29,7 @@ use yii\web\JsExpression;
     <?php //$form->field($model, 'nomor_pegawai')->textInput(['maxlength' => true]) ?>
 
     <?php
-    $url = \yii\helpers\Url::to(['anggota/select-karyawan-pnj']);
+    $url = \yii\helpers\Url::to(['anggota/select-karyawan']);
 
     $karyawan_pnj = empty($model->nomor_pegawai) ? '' : $model->nomor_pegawai;
 
