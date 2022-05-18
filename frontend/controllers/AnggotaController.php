@@ -62,19 +62,19 @@ class AnggotaController extends Controller
         \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
         $out = ['results' => ['id' => '', 'text' => '']];
         if (!is_null($q)) {
-            $query = '
-            select pegKodeResmi id, CONCAT(pegNama,\' (\',pegKodeResmi,\')\') text
-            from pub_pegawai
-            where lower(pegNama) like \'%'.$q.'%\' or lower(pegKodeResmi) like \''.$q.'%\'
-            limit 20
-            ';
-            
-            $command = Yii::$app->db_pegawai->createCommand($query);
+            $query = DbpegawaiPubPegawai::find()
+                ->orWhere(['ilike', 'pegNama', $q])
+                ->orWhere(['ilike', 'pegKodeResmi', $q])
+                ->limit(20)
+                ->all();
+            $data = [];
+            foreach($query as $item)
+                $data[] = [
+                    'id' => $item->pegKodeResmi,
+                    'text' => $item->pegNama .' ('.$item->pegKodeResmi.')',
+                ];
 
-            $data = $command->queryAll();
-
-
-            $out['results'] = array_values($data);
+            $out['results'] = $data;
         }
         elseif ($nomor_pegawai > 0) {
             $out['results'] = ['nomor_pegawai' => $nomor_pegawai, 'text' => DbpegawaiPubPegawai::find([['nomor_pegawai'=>$nomor_pegawai]])->pegNama];

@@ -82,15 +82,7 @@ class DbpegawaiPubPegawai extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'pub_pegawai';
-    }
-
-    /**
-     * @return \yii\db\Connection the database connection used by this AR class.
-     */
-    public static function getDb()
-    {
-        return Yii::$app->get('db_pegawai');
+        return 'pegawai';
     }
 
     /**
