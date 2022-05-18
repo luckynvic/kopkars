@@ -22,7 +22,7 @@ class m400001_000010_histori_voucher extends Migration
             'by' => $this->string(50),
         ]);
 
-        $this->addPrimaryKey('histori_voucher_kode_voucher_kode_toko_pkey','voucher',array('kode_voucher','kode_toko'));
+        $this->addPrimaryKey('histori_voucher_kode_voucher_kode_toko_pkey','histori_voucher', array('kode_voucher','kode_toko'));
         
     }
 

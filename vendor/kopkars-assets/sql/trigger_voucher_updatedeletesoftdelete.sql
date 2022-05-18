@@ -84,5 +84,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION public.trigger_voucher_updatedeletesoftdelete()
-  OWNER TO kopkars;

@@ -62,5 +62,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION public.trigger_pesanan_pinjaman_update()
-  OWNER TO kopkars;

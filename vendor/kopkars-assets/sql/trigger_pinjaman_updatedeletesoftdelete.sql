@@ -83,5 +83,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION public.trigger_pinjaman_updatedeletesoftdelete()
-  OWNER TO kopkars;

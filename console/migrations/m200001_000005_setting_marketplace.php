@@ -36,7 +36,6 @@ class m200001_000005_setting_marketplace extends Migration
             'ekspedisi_jnt_economy'=> $this->boolean()->defaultValue(false)->notNull(),
             'ekspedisi_jnt_ekspress'=> $this->boolean()->defaultValue(false)->notNull(),
             'ekspedisi_jnt_jemari'=> $this->boolean()->defaultValue(false)->notNull(),
-            'ekspedisi_jnt_jemari'=> $this->boolean()->defaultValue(false)->notNull(),
             'ekspedisi_jnt_reg'=> $this->boolean()->defaultValue(false)->notNull(),
             'ekspedisi_lionparcel_onepack'=> $this->boolean()->defaultValue(false)->notNull(),
             'ekspedisi_lionparcel_regpack'=> $this->boolean()->defaultValue(false)->notNull(),
@@ -58,6 +57,13 @@ class m200001_000005_setting_marketplace extends Migration
             'ekspedisi_tiki_ons'=> $this->boolean()->defaultValue(false)->notNull(),
             'ekspedisi_tiki_reg'=> $this->boolean()->defaultValue(false)->notNull(),
             'ekspedisi_wahana'=> $this->boolean()->defaultValue(false)->notNull(),
+            'ekspedisi_jnt_trucking' => $this->boolean()->defaultValue(false)->notNull(),
+            'ekspedisi_reguler_cashless' => $this->boolean()->defaultValue(false)->notNull(),
+            'ekspedisi_hemat' => $this->boolean()->defaultValue(false)->notNull(),
+            'ekspedisi_kargo' => $this->boolean()->defaultValue(false)->notNull(),
+            'ekspedisi_sameday' => $this->boolean()->defaultValue(false)->notNull(),
+            'ekspedisi_instant' => $this->boolean()->defaultValue(false)->notNull(),
+            'ekspedisi_nextday' => $this->boolean()->defaultValue(false)->notNull(),
         ]);
 
         $this->addPrimaryKey('setting_marketplace_pkey','setting_marketplace',array('kode_toko','kode_variabel_marketplace'));

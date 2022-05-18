@@ -69,5 +69,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION public.trigger_anggota_simpanan_updatedeletesoftdelete()
-  OWNER TO kopkars;

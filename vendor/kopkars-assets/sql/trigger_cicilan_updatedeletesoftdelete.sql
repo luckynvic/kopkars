@@ -65,5 +65,3 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION public.trigger_cicilan_updatedeletesoftdelete()
-  OWNER TO kopkars;
