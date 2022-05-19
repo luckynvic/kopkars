@@ -208,12 +208,8 @@ class AnggotaController extends Controller
             $post = ['Anggota' => $posted];
 
             if ($model->load($post) && $model->save()) {
-                $output = $model->status;
-
-                $errs = current($model->getErrors());
-                $message = $errs[0];
-                
-                return ['output'=>$output, 'message'=>$message];
+                $output = $model->status;              
+                return ['output'=>$output, 'message'=>''];
             } else {
                 return ['output'=>'', 'message'=>current($model->getErrors())[0]];
             }
