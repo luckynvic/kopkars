@@ -195,10 +195,10 @@ class Pinjaman extends ActiveRecord
     }
 
     public static function frontendTotalPinjaman() {
-        return (integer)self::findFrontendPinjaman()->sum('total_pembayaran');
+        return (integer)self::findFrontendPinjaman()->sum('total_pembayaran') ;
     }
 
     public static function frontendTanggalPinjamanTerakhir() {
-        return self::findFrontendPinjaman()->one()->waktu;
+        return self::findFrontendPinjaman()->one()->waktu ?? null;
     }
 }

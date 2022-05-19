@@ -193,6 +193,6 @@ class Cicilan extends ActiveRecord
     }
 
     public static function frontendTanggalCicilanTerakhir() {
-        return self::findFrontendCicilan()->one()->waktu;
+        return self::findFrontendCicilan()->one()->waktu ?? null;
     }
 }
