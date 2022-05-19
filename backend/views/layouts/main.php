@@ -233,7 +233,7 @@ AppAsset::register($this);
     <div class="container-fluid">
         <p class="pull-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
 
-        <p class="pull-right">Powered by <?=Html::a('Kopkar','https://kopkar.setneg-ppkk.co.id/')?> and <?=Html::a('IT PPK Kemayoran','https://www.setneg-ppkk.co.id/')?></p>
+        <p class="pull-right">Powered by <?=Html::a('Kopkar','https://kopkar.setneg-ppkk.co.id/')?> and <?=Html::a('PPK Kemayoran','https://www.setneg-ppkk.co.id/')?></p>
     </div>
 </footer>
 
