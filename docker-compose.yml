@@ -29,6 +29,6 @@ services:
       - POSTGRES_USER=kopkars
       - POSTGRES_PASSWORD=secret
     ports:
-      - 23306:3306
+      - 25432:5432
   redis:
     image: redis
