@@ -28,6 +28,7 @@ return [
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
             'defaultRoles' => ['guest', 'user'],
+            'cache' => 'cache',
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
