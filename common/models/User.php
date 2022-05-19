@@ -43,6 +43,8 @@ class User extends ActiveRecord implements IdentityInterface
 	public $re_password;
 	public $captcha;
 
+    // dummy
+    public  $verification_token;
 
     /**
      * {@inheritdoc}
