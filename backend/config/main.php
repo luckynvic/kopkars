@@ -69,9 +69,6 @@ return [
         'rbac' => [
             'class' => 'yii2mod\rbac\Module',
         ],
-        'rbacconsole' => [
-            'class' => 'yii2mod\rbac\ConsoleModule'
-        ]
     ],
     'params' => $params,
 ];
